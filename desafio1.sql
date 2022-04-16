@@ -48,7 +48,6 @@ CREATE TABLE SpotifyClone.cancoes_escutadas (
 ) ENGINE=InnoDB;
 
 CREATE TABLE SpotifyClone.seguindo_artistas (
-	#seguindo_artista_id INT PRIMARY KEY AUTO_INCREMENT,
     usuario_id INT NOT NULL,
     artista_id INT NOT NULL,
     CONSTRAINT PRIMARY KEY(artista_id, usuario_id),
@@ -60,8 +59,8 @@ INSERT INTO SpotifyClone.planos (tipo_plano, valor_plano)
 VALUES
   ('gratuito', 0),
   ('familiar', 7.99),
-  ('pessoal', 6.99),
-  ('universitario', 5.99);
+  ('universitario', 5.99),
+  ('pessoal', 6.99);
   
 INSERT INTO SpotifyClone.artistas (nome)
 VALUES
